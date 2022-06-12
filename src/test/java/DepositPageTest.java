@@ -28,21 +28,21 @@ public class DepositPageTest {
 
     @BeforeEach
     @AfterEach
-    public void TimeOut() throws InterruptedException {
+    public void timeOut() throws InterruptedException {
         TimeUnit.SECONDS.sleep(2);
     }
 
     @Test
     @Order(1)
     @DisplayName("InputSum")
-    public void InputSum() throws InterruptedException {
+    public void inputSum() throws InterruptedException {
         DepositPageMap.forEach((key, DepositPage) -> assertTrue(DepositPage.inputSum.isDisplayed()));
     }
 
     @Test
     @Order(2)
     @DisplayName("click0")
-    public void Click1() throws InterruptedException {
+    public void click1() throws InterruptedException {
         DepositPageMap.forEach((key, DepositPage) -> DepositPage.clickToWrite());
     }
 
@@ -56,56 +56,56 @@ public class DepositPageTest {
     @Test
     @Order(3)
     @DisplayName("ChooseTime")
-    public void ChooseTime() throws InterruptedException {
+    public void chooseTime() throws InterruptedException {
         DepositPageMap.forEach((key, DepositPage) -> assertTrue(DepositPage.chooseTime.isDisplayed()));
     }
 
     @Test
     @Order(4)
     @DisplayName("click1")
-    public void Click() throws InterruptedException {
+    public void click() throws InterruptedException {
         DepositPageMap.forEach((key, DepositPage) -> DepositPage.clickChooseTime());
     }
 
     @Test
     @Order(5)
     @DisplayName("ThreeMonths")
-    public void ThreeMonths() throws InterruptedException {
+    public void threeMonths() throws InterruptedException {
         DepositPageMap.forEach((key, DepositPage) -> assertTrue(DepositPage.threeMonths.isDisplayed()));
     }
 
     @Test
     @Order(6)
     @DisplayName("ClickThreeMonths")
-    public void ClickThreeMonths() throws InterruptedException {
+    public void clickThreeMonths() throws InterruptedException {
         DepositPageMap.forEach((key, DepositPage) -> DepositPage.clickThreeMonths());
     }
 
     @Test
     @Order(7)
     @DisplayName("Popular")
-    public void Popular() throws InterruptedException {
+    public void popular() throws InterruptedException {
         DepositPageMap.forEach((key, DepositPage) -> assertTrue(DepositPage.popular.isDisplayed()));
     }
 
     @Test
     @Order(8)
     @DisplayName("ChoosePopular")
-    public void ChoosePopular() throws InterruptedException {
+    public void choosePopular() throws InterruptedException {
         DepositPageMap.forEach((key, DepositPage) -> DepositPage.clickPopular());
     }
 
     @Test
     @Order(9)
     @DisplayName("Find")
-    public void Find() throws InterruptedException {
+    public void find() throws InterruptedException {
         DepositPageMap.forEach((key, DepositPage) -> assertTrue(DepositPage.find.isDisplayed()));
     }
 
     @Test
     @Order(10)
     @DisplayName("ClickFind")
-    public void ClickFind() throws InterruptedException {
+    public void clickFind() throws InterruptedException {
         DepositPageMap.forEach((key, DepositPage) -> DepositPage.clickFind());
     }
 

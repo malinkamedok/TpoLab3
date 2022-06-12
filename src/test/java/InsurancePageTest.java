@@ -27,112 +27,112 @@ public class InsurancePageTest {
 
     @BeforeEach
     @AfterEach
-    public void TimeOut() throws InterruptedException {
+    public void timeOut() throws InterruptedException {
         TimeUnit.SECONDS.sleep(5    );
     }
 
     @Test
     @Order(1)
     @DisplayName("Number")
-    public void Number() throws InterruptedException {
+    public void number() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> assertTrue(InsurancePage.number.isDisplayed()));
     }
 
     @Test
     @Order(2)
     @DisplayName("EnterNumber")
-    public void EnterNumber() throws InterruptedException {
+    public void enterNumber() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.enterNumber("Р841ОН198"));
     }
 
     @Test
     @Order(3)
     @DisplayName("Count")
-    public void Count() throws InterruptedException {
+    public void count() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> assertTrue(InsurancePage.count.isDisplayed()));
     }
 
     @Test
     @Order(4)
     @DisplayName("CountEnter")
-    public void CountEnter() throws InterruptedException {
+    public void countEnter() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.clickCount());
     }
 
     @Test
     @Order(5)
     @DisplayName("EnterBrand")
-    public void EnterBrand() throws InterruptedException {
+    public void enterBrand() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.enterBrand("Land Rover"));
     }
 
     @Test
     @Order(6)
     @DisplayName("EnterModel")
-    public void EnterModel() throws InterruptedException {
+    public void enterModel() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.enterModel("Discovery Sport"));
     }
 
     @Test
     @Order(7)
     @DisplayName("EnterYear")
-    public void EnterYear() throws InterruptedException {
+    public void enterYear() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.enterYear("2017"));
     }
 
     @Test
     @Order(8)
     @DisplayName("Power")
-    public void Power() throws InterruptedException {
+    public void power() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.enterPower("180"));
     }
 
     @Test
     @Order(9)
     @DisplayName("CarNumber")
-    public void CarNumber() throws InterruptedException {
+    public void carNumber() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.enterCarNumber("Р841ОН198"));
     }
 
     @Test
     @Order(10)
     @DisplayName("VIN")
-    public void Vin() throws InterruptedException {
+    public void vin() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.enterVIN("SALCA123456789011"));
     }
 
     @Test
     @Order(11)
     @DisplayName("STS")
-    public void Sts() throws InterruptedException {
+    public void sts() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.enterSTS("1120111111"));
     }
 
     @Test
     @Order(12)
     @DisplayName("Date")
-    public void Date() throws InterruptedException {
+    public void date() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.enterDate("10102018"));
     }
 
     @Test
     @Order(13)
     @DisplayName("ClickContinue")
-    public void ClickContinue() throws InterruptedException {
+    public void clickContinue() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.clickContinue());
     }
 
     @Test
     @Order(14)
     @DisplayName("ClickNoLimits")
-    public void ClickNoLimits() throws InterruptedException {
+    public void clickNoLimits() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.clickNoLimits());
     }
 
     @Test
     @Order(15)
     @DisplayName("ClickContinue1")
-    public void ClickContinue1() throws InterruptedException {
+    public void clickContinue1() throws InterruptedException {
         InsurancePageMap.forEach((key, InsurancePage) -> InsurancePage.clickContinue1());
     }
 

@@ -29,49 +29,49 @@ public class BusinessPageTest {
 
     @BeforeEach
     @AfterEach
-    public void TimeOut() throws InterruptedException {
+    public void timeOut() throws InterruptedException {
         TimeUnit.SECONDS.sleep(5);
     }
 
     @Test
     @Order(1)
     @DisplayName("Pick")
-    public void Pick() throws InterruptedException {
+    public void pick() throws InterruptedException {
         BusinessPageMap.forEach((key, BusinessPage) -> assertTrue(BusinessPage.pick.isDisplayed()));
     }
 
     @Test
     @Order(2)
     @DisplayName("ClickPick")
-    public void ClickPick() throws InterruptedException {
+    public void clickPick() throws InterruptedException {
         BusinessPageMap.forEach((key, BusinessPage) -> BusinessPage.clickPick());
     }
 
     @Test
     @Order(3)
     @DisplayName("More")
-    public void More() throws InterruptedException {
+    public void more() throws InterruptedException {
         BusinessPageMap.forEach((key, BusinessPage) -> assertTrue(BusinessPage.more.isDisplayed()));
     }
 
     @Test
     @Order(4)
     @DisplayName("ClickMore")
-    public void ClickMore() throws InterruptedException {
+    public void clickMore() throws InterruptedException {
         BusinessPageMap.forEach((key, BusinessPage) -> BusinessPage.clickMore());
     }
 
     @Test
     @Order(5)
     @DisplayName("SomeMore")
-    public void SomeMore() throws InterruptedException {
+    public void someMore() throws InterruptedException {
         BusinessPageMap.forEach((key, BusinessPage) -> assertTrue(BusinessPage.someMore.isDisplayed()));
     }
 
     @Test
     @Order(6)
     @DisplayName("ClickSomeMore")
-    public void ClickSomeMore() throws InterruptedException {
+    public void clickSomeMore() throws InterruptedException {
         BusinessPageMap.forEach((key, BusinessPage) -> BusinessPage.clickSomeMore());
     }
 

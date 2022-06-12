@@ -27,63 +27,63 @@ public class IpotekaPageTest {
 
     @BeforeEach
     @AfterEach
-    public void TimeOut() throws InterruptedException {
+    public void timeOut() throws InterruptedException {
         TimeUnit.SECONDS.sleep(2);
     }
 
     @Test
     @Order(1)
     @DisplayName("Refinansirovaniye")
-    public void Refinans() throws InterruptedException {
+    public void refinans() throws InterruptedException {
         IpotekaPageMap.forEach((key, IpotekaPage) -> assertTrue(IpotekaPage.refinans.isDisplayed()));
     }
 
     @Test
     @Order(2)
     @DisplayName("ClickOnRefinans")
-    public void ClickOnRefinans() throws InterruptedException {
+    public void clickOnRefinans() throws InterruptedException {
         IpotekaPageMap.forEach((key, IpotekaPage) -> IpotekaPage.clickRefinans());
     }
 
     @Test
     @Order(3)
     @DisplayName("Type")
-    public void Type() throws InterruptedException {
+    public void type() throws InterruptedException {
         IpotekaPageMap.forEach((key, IpotekaPage) -> assertTrue(IpotekaPage.type.isDisplayed()));
     }
 
     @Test
     @Order(4)
     @DisplayName("ClickOnType")
-    public void ClickOnType() throws InterruptedException {
+    public void clickOnType() throws InterruptedException {
         IpotekaPageMap.forEach((key, IpotekaPage) -> IpotekaPage.clickType());
     }
 
     @Test
     @Order(5)
     @DisplayName("Garage")
-    public void Garage() throws InterruptedException {
+    public void garage() throws InterruptedException {
         IpotekaPageMap.forEach((key, IpotekaPage) -> assertTrue(IpotekaPage.garage.isDisplayed()));
     }
 
     @Test
     @Order(6)
     @DisplayName("ClickOnGarage")
-    public void ClickOnGarage() throws InterruptedException {
+    public void clickOnGarage() throws InterruptedException {
         IpotekaPageMap.forEach((key, IpotekaPage) -> IpotekaPage.clickGarage());
     }
 
     @Test
     @Order(7)
     @DisplayName("Find")
-    public void Find() throws InterruptedException {
+    public void find() throws InterruptedException {
         IpotekaPageMap.forEach((key, IpotekaPage) -> assertTrue(IpotekaPage.find.isDisplayed()));
     }
 
     @Test
     @Order(8)
     @DisplayName("ClickOnFind")
-    public void ClickOnFind() throws InterruptedException {
+    public void clickOnFind() throws InterruptedException {
         IpotekaPageMap.forEach((key, IpotekaPage) -> IpotekaPage.clickFind());
     }
 

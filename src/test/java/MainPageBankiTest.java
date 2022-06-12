@@ -27,98 +27,91 @@ public class MainPageBankiTest {
 
     @BeforeEach
     @AfterEach
-    public void TimeOut() throws InterruptedException {
+    public void timeOut() throws InterruptedException {
         TimeUnit.SECONDS.sleep(2);
     }
 
     @Test
     @DisplayName("MainPageButton")
-    public void MainPageButton() throws InterruptedException {
+    public void mainPageButton() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageButton.isDisplayed()));
     }
 
     @Test
     @DisplayName("StartLoginButton")
-    public void StartLoginButton() throws InterruptedException {
+    public void startLoginButton() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.startLoginButton.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageDeposit")
-    public void MainPageDeposit() throws InterruptedException {
+    public void mainPageDeposit() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageDeposit.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageCredit")
-    public void MainPageCredit() throws InterruptedException {
+    public void mainPageCredit() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageCredit.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageCards")
-    public void MainPageCards() throws InterruptedException {
+    public void mainPageCards() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageCards.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageIpoteka")
-    public void MainPageIpoteka() throws InterruptedException {
+    public void mainPageIpoteka() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageIpoteka.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageInsurance")
-    public void MainPageInsurance() throws InterruptedException {
+    public void mainPageInsurance() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageInsurance.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageInvestments")
-    public void MainPageInvestments() throws InterruptedException {
+    public void mainPageInvestments() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageInvestments.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageBusiness")
-    public void MainPageBusiness() throws InterruptedException {
+    public void mainPageBusiness() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageBusiness.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageNews")
-    public void MainPageNews() throws InterruptedException {
+    public void mainPageNews() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageNews.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageMore")
-    public void MainPageMore() throws InterruptedException {
+    public void mainPageMore() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageMore.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageReviews")
-    public void MainPageReviews() throws InterruptedException {
+    public void mainPageReviews() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageReviews.isDisplayed()));
     }
 
     @Test
     @DisplayName("MainPageAsk")
-    public void MainPageAsk() throws InterruptedException {
+    public void mainPageAsk() throws InterruptedException {
         MainPageMap.forEach((key, MainPageBanki) -> assertTrue(MainPageBanki.mainPageAsk.isDisplayed()));
     }
 
-//    @Test
-//    @AfterAll
-//    @DisplayName("ClickMainPageDeposit")
-//    public void ClickMainPageDeposit() throws InterruptedException {
-//        MainPageMap.forEach((key, MainPageBanki) -> MainPageBanki.clickDeposit());
-//        TimeUnit.SECONDS.sleep(10);
-//        BrowserDrivers.closeBrowser();
-//    }
-@AfterAll
-public static void closeUp() throws InterruptedException {
+
+    @AfterAll
+    public static void closeUp() throws InterruptedException {
 //        TimeUnit.SECONDS.sleep(10);
     BrowserDrivers.closeBrowser();
 }

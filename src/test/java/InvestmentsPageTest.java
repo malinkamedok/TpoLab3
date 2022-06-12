@@ -27,21 +27,21 @@ public class InvestmentsPageTest {
 
     @BeforeEach
     @AfterEach
-    public void TimeOut() throws InterruptedException {
+    public void timeOut() throws InterruptedException {
         TimeUnit.SECONDS.sleep(5);
     }
 
     @Test
     @Order(1)
     @DisplayName("Banner")
-    public void Banner() throws InterruptedException {
+    public void banner() throws InterruptedException {
         InvestmentsPageMap.forEach((key, InvestmentsPage) -> assertTrue(InvestmentsPage.banner.isDisplayed()));
     }
 
     @Test
     @Order(2)
     @DisplayName("ClickBanner")
-    public void ClickBanner() throws InterruptedException {
+    public void clickBanner() throws InterruptedException {
         InvestmentsPageMap.forEach((key, InvestmentsPage) -> InvestmentsPage.clickBanner());
     }
 

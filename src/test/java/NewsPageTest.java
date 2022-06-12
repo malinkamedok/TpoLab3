@@ -27,21 +27,21 @@ public class NewsPageTest {
 
     @BeforeEach
     @AfterEach
-    public void TimeOut() throws InterruptedException {
+    public void timeOut() throws InterruptedException {
         TimeUnit.SECONDS.sleep(5);
     }
 
     @Test
     @Order(1)
     @DisplayName("China")
-    public void China() throws InterruptedException {
+    public void china() throws InterruptedException {
         NewsPageMap.forEach((key, NewsPage) -> assertTrue(NewsPage.china.isDisplayed()));
     }
 
     @Test
     @Order(2)
     @DisplayName("ClickChina")
-    public void ClickChina() throws InterruptedException {
+    public void clickChina() throws InterruptedException {
         NewsPageMap.forEach((key, NewsPage) -> NewsPage.clickChina());
     }
 
